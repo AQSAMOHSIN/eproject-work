@@ -1,0 +1,276 @@
+nav .nav{
+    list-style-type: none;
+    
+    
+}
+
+.nav li{
+    display: inline;
+    margin: 10px;
+    font-size: 15px;
+    padding: 10px;
+    
+}
+nav .sub{
+    display: inline;
+    background-color: rgb(233, 233, 233);
+    padding: 12px;
+    border-radius: 20px;
+    margin: 0px;
+    
+}
+nav{
+    display: flex;
+   padding: 10px;
+   width: 100%;
+  
+}
+nav li:hover{
+    background-color: rgb(15, 96, 110);
+    color: white;
+
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+header .button{
+    display: inline;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+header .banner{
+    height: 500px;
+    width: 100%;
+}
+
+main .button{
+    display: inline;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    color: white;
+}
+
+/*hiii*/
+
+main .container{
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,minmax(50px,auto));
+    width: 80%;
+}
+
+.two{
+    grid-column: 2;
+    grid-row: 1/3;
+}
+.one{
+    grid-row: 2/3;
+    grid-column: 1;
+}
+.three{
+    grid-row: 2/3;
+    grid-column: 3;
+}
+
+main .service{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(233, 233, 233) ;
+}
+main .two{
+    background-color:rgb(160, 160, 160) ;
+    
+}
+
+
+
+
+section.banner{
+    margin-top: 350px;
+    background-color:rgb(233, 233, 233) ;
+    width: 1270px;
+    height: 450px;
+    position: relative;
+}
+.banner .pera{
+    position: absolute;
+    width: 30%;
+    top: 50px;
+    left: 150px;
+    color: white;
+}
+.banner img{
+    transform: translate(120px,19px);
+}
+.staff{
+    padding: 30px;
+}
+.staff .container{
+    display: flex;
+}
+
+.staff .heading{
+    text-align: center;
+}
+.staff .heading:after{
+    content: "";
+    display: block;
+    clear: both;
+    height: 40px;
+}
+.staff .heading h1{
+    font-size: 35px;
+    margin-bottom: -0px;   
+}
+.staff .heading img{ 
+    margin-bottom: 35px;   
+}
+.staff .wraper{
+    text-align: center;
+    margin-left: 80px;
+
+}
+.staff .wraper p{
+    font-size:20px ;
+}
+.client .heading {
+    text-align: center;
+    
+}
+.client .heading:after{
+    content: "";
+    display: block;
+    clear: both;
+    height: 0px;
+}
+.client .heading:before{
+    content: "";
+    display: block;
+    clear: both;
+    height: 60px;
+}
+.client .heading h1{
+    font-size: 35px;
+    margin-bottom: -0px;   
+}
+.client .heading img{ 
+    margin-bottom: 35px;   
+}
+.client div {
+    background-color: rgb(233, 233, 233);
+}
+.client img.sub{
+    border-radius: 50px;
+}
+.client div.main{
+    display: flex;
+    text-align: center;
+}
+.client .main .container{
+    margin: auto;
+    padding: 10px;
+}
+.client .main:after{
+    
+        content: "";
+        display: block;
+        clear: both;
+        height: 500px;
+    
+    
+}
+section.images ul {
+    list-style-type: none;
+    text-align: center;
+}
+section.images {
+    background-color:  rgb(247, 245, 245);
+    padding: 15px;
+}
+section.images  ul li{
+    display:inline;
+    margin-left: 30px;
+} 
+
+.media_links:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.media_links{
+    background-color:  rgb(15, 96, 110);
+    padding: 15px;
+}
+.media_links img{
+    margin-left: 30px;  
+}
+.media_links ul{
+    list-style: none;
+    float:right;
+    margin-right: 50px;
+}
+
+.media_links ul li{
+    display: inline;
+    
+}
+
+.media_links ul li img{
+    width: 35px;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-left: 0px;
+    
+}
+.contact_info{
+    display: flex;
+    background-color:rgb(40, 171, 194) ;
+    font-size: 20px;
+    color: rgb(155, 225, 238);
+    line-height: 35px;
+    
+}
+.contact_info div{
+    margin-left:30px;
+    width: 400px;
+    
+}
+.contact_info .about_us{
+    width: 300px;
+}
+.contact_info ul{
+    list-style: none;
+}
+.contact_info p{
+    padding: 20px;
+}
+.contact_info h1{
+    color: white;
+    font-size: 25px;
+}
+.contact_info ul li{
+    text-overflow: ellipsis;
+}
+
+.contact_info .about_us{
+    margin-top: 90px;
+}
+.contact_info .location{
+    margin-top: 40px;
+}
+.contact_info i{
+    margin-right: 5px;
+}
+.copyright{
+    padding: 7px;
+    color: rgb(119, 216, 233);
+    background-color: rgb(21, 117, 135);
+    text-align: center;
+    font-size: 15px;
+}

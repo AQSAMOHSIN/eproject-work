@@ -1,0 +1,36 @@
+.container
+{  
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+.main{
+    background-color: rgb(194, 137, 248);
+    margin :50px auto;
+    padding: 40px;
+
+width: 50%;}
+
+li{
+    list-style-type: none;
+    font-size: 25px;
+    padding: 10px;
+    border: 1px solid white;
+    margin: auto;
+    margin-left: -20px;
+}
+.fa{
+    float:right ;
+}
+.add
+{   margin-top: 20px;
+    height: 30px;
+    width: 95%;
+    padding : 5px;
+    
+
+}
+.remove
+{
+    display: none;
+}

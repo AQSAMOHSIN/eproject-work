@@ -1,0 +1,27 @@
+data type null for empthy
+
+
+like int('2') in java Number('3')
+
+
+
+
+
+replace('this','by this')
+include('check if it is present in string') //return values as true or false
+slice(from,to index)
+substr(from,till this count)
+indexOf('of what')
+lastIndexOf('of what')
+toUpperCase()
+
+for array
+let array =[]
+array[2]=''
+array.join(,)
+array.indexOf('')
+array.concat(array2) //joining 2 arrays
+array.push('')//enter the new member in array //it change the array and return the index 
+eg i=array.push // i contain lenght of array 
+
+array.pop() //change the array //it delete the last value and retuen it

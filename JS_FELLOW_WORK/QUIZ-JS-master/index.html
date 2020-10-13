@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Ninja Quiz</title>
+</head>
+<body>
+    <div class="intro py-3 bg-white text-center">
+        <div class="container">
+            <h2 class="text-success display-3 my-4">Ninja Quiz</h2>
+        </div>
+    </div>
+
+    <div class="result py-4 d-none bg-light text-center">
+        <div class="container-lead">
+            <p>You are <span class="text-success display-4 p-3">0%</span> ninja</p>
+        </div>
+    </div>
+
+    <div class="quiz py-4 bg-success">
+        <div class="container">
+            <h2 class="text-white my-5">On with the questions</h2>
+            <form class="quiz-form text-light">
+                <div class="my-5">
+                    <p class="lead font-weight-normal">
+                        1.  Which term is used for describing the judgmental or commonsense part of problem solving?
+                    </p>
+                    <div class="form-check my-2 text-white-60">
+                        <input type="radio" name="q1" value="A" checked>
+                        <label class="form-check-label">Critical</label>   
+                    </div>
+                    <div class="form-check my-2 text-white-60">
+                        <input type="radio" name="q1" value="B" checked>
+                        <label class="form-check-label">Heuristic</label>   
+                    </div>      
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">
+                        2.What was originally called the “imitation game” by its creator?
+                    </p>
+                    <div class="form-check my-2 text-white-60">
+                        <input type="radio" name="q2" value="A" checked>
+                        <label class="form-check-label">Cybernatics</label>   
+                    </div>
+                    <div class="form-check my-2 text-white-60">
+                        <input type="radio" name="q2" value="B" checked>
+                        <label class="form-check-label">The Turing Test</label>   
+                    </div>      
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">
+                        3.In language understanding, the levels of knowledge that does not include?
+                    </p>
+                    <div class="form-check my-2 text-white-60">
+                        <input type="radio" name="q3" value="A" checked>
+                        <label class="form-check-label">Logical</label>   
+                    </div>
+                    <div class="form-check my-2 text-white-60">
+                        <input type="radio" name="q3" value="B" checked>
+                        <label class="form-check-label">Empirical</label>   
+                    </div>      
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">
+                        4.Which of the following statement is used to make sql server resize the database file to its smallest possible size?
+                    </p>
+                    <div class="form-check my-2 text-white-60">
+                        <input type="radio" name="q4" value="A" checked>
+                        <label class="form-check-label">DBCC SHRINKDB</label>   
+                    </div>
+                    <div class="form-check my-2 text-white-60">
+                        <input type="radio" name="q4" value="B" checked>
+                        <label class="form-check-label">DBCC SHRINKFILE</label>   
+                    </div>      
+                </div>
+                <div class="text-center">
+                    <input type="submit" class="btn btn-light">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

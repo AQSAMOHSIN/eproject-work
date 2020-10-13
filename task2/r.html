@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+div{
+    padding: 20px;
+    border: 2px solid black;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,minmax(50px,auto));
+    /* grid-auto-rows: minmax(50px,auto); */
+
+}
+.one{
+    background-color: cadetblue;
+}
+.two{
+    background-color: darkturquoise;
+    grid-row: 2/4;
+
+}
+.three{
+    background-color: fuchsia;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+
+    <div class="one">1</div>
+    <div class="two"> <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites </p></div>
+    <div class="three">3</div>
+    <div class="three">3</div>
+    <div class="three">3</div>
+    <div class="three">3</div>
+    <div class="three">3</div>
+    <div class="three">3</div>
+    <div class="three">3</div>
+
+</div>
+</body>
+</html>
