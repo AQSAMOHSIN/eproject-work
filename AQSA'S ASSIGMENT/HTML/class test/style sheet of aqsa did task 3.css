@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* CSS Document */
+div { border: double dotted;
+      border-color:#FF3 #0000FF;}
+	  
+	  p.sample{
+		  color:#066;
+		  text-align:center;}
+	  
+	  
+P.ABC{ font-style:italic;
+     color:
+	#33F;}
+	
+	
+	
+	P.PQR{ font-style:italic;
+	color:#F3F;}
+	
+	P.XYZ{ font-style:italic;
+	  color:#F00;}

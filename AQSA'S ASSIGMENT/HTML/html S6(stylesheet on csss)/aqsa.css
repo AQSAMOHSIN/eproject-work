@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1 { border-color: #00F;
+border-width:medium;
+border-style:double;
+color:#09F;
+font-family:Tahoma, Geneva, sans-serif;
+color:#0CF;
+background: #C6F;}
+p { margin-left:30px;
+  font-style:oblique;
+   font-family:Verdana, Geneva, sans-serif;
+   word-spacing:20px;
+   background:#6CF;
+   }
+   p:first-letter { font-size:36px;
+   }

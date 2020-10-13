@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+var a=new Array("ali","taha","saad");
+
+//change name
+
+	
+function f1(a)
+{
+	a[0]="aqsa";
+
+	a[2]="maaz";
+
+}
+
+//display name
+function f2()
+{
+	document.write("<h3>names</h3>");
+   document.write("<ul>");	
+   
+   for(var i=0;i<a.length;i++)
+   {
+   document.write("<li>"+a[i]+"</li>");
+   }
+   
+  document.write("</ul>");
+  
+ f1(a);
+ document.write("<h3>change name</h3>");
+document.write("<ul>");
+
+for (var i=0;i<a.length;i++)
+{
+	document.write("<li>"+a[i]+"</li>");
+	
+}
+document.write("</ul>");
+}
+//display name
+f2(a);
+
+	
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+

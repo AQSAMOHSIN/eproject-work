@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script>
+
+function emp(name,lastname,age){
+	this.name=name;
+	this.lastname=lastname;
+	this.age=age;
+}
+
+
+
+
+aa=new emp('Taha','ali','15');
+document.write('By new keyword/template method');
+document.write("<br>");
+
+document.write("Name    "+aa.name+','+"lastname     "+aa.lastname+','+"Age   "+aa.age);
+
+
+
+
+document.write("<br>");
+document.write("<br>");
+
+var student=new Object();
+student.firstname="sana";
+student.lastname="zahid";
+student.age="16";
+document.write("DIRECT METHOD" +"</br>"+student.firstname+','+student.lastname+','+student.age);
+document.write("<br>");
+
+
+
+
+
+
+
+
+</script>
+</head>
+
+<body>
+</body>
+</html>

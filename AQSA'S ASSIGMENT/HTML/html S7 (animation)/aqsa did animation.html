@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+img{
+
+width:300px;
+height:300px;
+border:#03F 1px double;
+border:1px solid #3399FF;
+position:absolute;
+border-radius:30px;
+animation-name:first;
+animation-duration:3s;
+animation-iteration-count:10;
+animation-delay:1s;
+animation-direction:alternate;
+animation-timing-function:linear;
+animation-play-state:running;
+/*firefox*/
+-moz-animation-name:first;
+-moz-animation-duration:3s;
+-moz-animation-iteration-count:10;
+-moz-animation-delay:1s;
+-moz-animation-direction:alternate;
+-moz-animation-timing-function:ease-in;
+-moz-animation-play-state:running;
+/*GOOGLE CHROME*/
+-webkit-animation-name:first;
+-webkit-animation-duration:3s;
+-webkit-animation-iteration-count:10;
+-webkit-animation-delay:1s;
+-webkit-animation-direction:normal;
+-webkit-animation-timing-function:ease-in;
+-webit-animation-play-state:running;
+
+ 
+
+}
+
+
+
+
+
+
+
+@keyframes first{
+	0%{height:100px; left:0px;top:0px; border:thick 3px #66FF00}
+	25%{height:200px;left:0px;top:300px; border:dotted 1px  #000099}
+	50%{height:300px;left:300px;top:300px; border:dotted 2px #CC00CC}
+	75%{height:400px;left:300px;top:0px; border: dotted 4px #33FFFF}
+    100% {height:500px;left:0x;top:0px; border:dotted 3px #FF0000}
+}
+@-webkit-keyframes first{
+0%{height:100px;left:0px;top:0px;border:thick 3px #66FF00}
+	25%{height:200px;left:0px;top:300px;border:dotted 1px  #000099}
+	50%{height:300px;left:300px;top:300px;border:dotted 2px #CC00CC}
+	75%{height:400px;left:300px;top:0px;border: dotted 4px #33FFFF}
+    100% {height:500px;left:0x;top:0px;border:dotted 3px #FF0000}
+
+
+
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<img src="images.jpg"/>
+
+
+
+</body>
+</html>

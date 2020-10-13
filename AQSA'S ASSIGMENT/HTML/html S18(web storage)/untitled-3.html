@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script>
+
+function store(){
+	if(('sessionStorage'in window)&& window['sessionStorage']!==null)
+{
+	var b=document.getElementById("a").value;
+		
+localStorage.setItem('c',b);
+}
+else
+{
+	alert('your browser does not suppot storage');
+}}
+function cancel_store()
+{
+	if (('localStorage' in window)&& window['localStorage']!==null)
+{
+	localStorage.removeItem('c');
+}
+else
+{
+	alert('your browser does not suppot storage');
+}}
+
+</script>
+</head>
+
+<body onload="checksupport()">
+<form action="link of 3.html">
+username<input type="text" id="a" onblur="store();"/><br>
+<input type="submit" value="Submit"/>
+<input type="button" onClick="cancel_store()" value="clear storage"/>
+</form>
+
+</body>
+</html>

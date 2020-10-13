@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+
+inout:required{
+	outline:2px solid red;
+	color:green;}
+	
+input:required valid{
+	background-size:10PX 10px;}
+input:required invalid{
+	background-color:#C99;
+	outline:1px solid black;}
+
+
+</style>
+
+</head>
+
+<body>
+<form action="firstsample.html" >
+USERNAME:&nbsp;&nbsp;<input type="text" name="user_name"required="true"/><BR><BR>
+PASSWORD:&nbsp;&nbsp;<input type="password" name="pwd" required/><br><br>
+Email:&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" required/><br><br>
+WEBSITE:&nbsp;&nbsp;&nbsp;&nbsp;<input type="url" name="weburl" placeholder="website address"/>
+
+<br>
+<br>
+<input type="submit" value="login"/><br><br>
+<input type="reset" value="reset"/>
+
+
+</form>
+
+</body>
+</html>

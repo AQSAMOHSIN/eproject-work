@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script>
+function getlocation(){
+if(window.navigator.geolocation)
+{
+	alert("your browser support geolocation");
+	navigator.geolocation.getCurrentPosition(showposition);
+}
+
+else{
+alert("NOT SUPPORTED");
+}
+
+function showposition(pos){
+	alert('Longitude::'+pos.coords.longitude +'\n'+'Latitude::'+pos.coords.latitude);
+}
+}
+</script>
+</head>
+
+<body>
+<input type="button" value="CHECK" onClick="getlocation()"/>
+</body>
+</html>

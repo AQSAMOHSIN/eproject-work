@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>IndexedDB Test</title>
+<link href="layout.css" rel="stylesheet" type="text/css"/>
+<script src="knockout-2.1.0.js"></script>
+<script src="IndexedDB.js"></script>
+<script src="iDB.js"></script>
+</head>
+<body>
+<h2>Testing IndexedDB.js</h2>
+  <div class="leftContainer"> 
+	<div><button data-bind="click:invokeAdd">Add Item</button></div>
+	<div>		
+		<div class="keyFloat">with key: 
+		<select data-bind="options:dbRecords, value: singleId, optionsText: 'id'"></select>
+		</div>
+		<span style="clear:left;"><button data-bind="click:showSingle">Show Single</button>	</span>
+	</div>
+	<div><button data-bind="click:showAll">Show All</button></div>
+	<div><button data-bind="click:showCount">Show Count</button></div>	
+	<div><button data-bind="click:clearItems">Clear Items</button></div>
+  </div>
+  <div class="rightContainer"> 
+  <center>
+	<table cellpadding="3">
+		<thead>
+		<tr><th>Name</th><th>Age</th><th>City</th><th>Height</th><th>Weight</th><th> </th><th> </th></tr>
+		</thead>
+		<tfoot data-bind="with:newItem">
+		<tr data-bind="visible:showAddItem()==1">
+		<td><input data-bind="value:name"/></td>
+		<td><input data-bind="value:age"/></td>
+		<td><input data-bind="value:city"/></td>
+		<td><input data-bind="value:height"/></td>
+		<td><input data-bind="value:weight"/></td>
+		<td> <a href="#" data-bind="click:$root.addRecord">Add</a> </td>
+		<td> <a href="#" data-bind="click:cancelAdd">cancel</a> </td>
+		</tr>
+		</tfoot>
+		<tbody data-bind="foreach:dbRecords">
+		<tr>
+			<td><span data-bind="text:name,visible:editMode()==0"></span><input data-bind="value:name,visible:editMode()==1"/></td>
+			<td><span data-bind="text:age,visible:editMode()==0"></span><input data-bind="value:age,visible:editMode()==1"/></td>
+			<td><span data-bind="text:city,visible:editMode()==0"></span><input data-bind="value:city,visible:editMode()==1"/></td>
+			<td><span data-bind="text:height,visible:editMode()==0"></span><input data-bind="value:height,visible:editMode()==1"/></td>
+			<td><span data-bind="text:weight,visible:editMode()==0"></span><input data-bind="value:weight,visible:editMode()==1"/></td>
+			<td>
+			<a href="#" data-bind="click:editRecord,visible:editMode()==0">edit</a>
+			<a href="#" data-bind="click:updateRecord,visible:editMode()==1">update</a>
+			</td>
+			<td>
+			<a href="#" data-bind="click:$root.deleteRecord,visible:editMode()==0">delete</a>
+			<a href="#" data-bind="click:cancelUpdate,visible:editMode()==1">cancel</a>
+			</td>
+		</tr>
+		</tbody>		
+	</table>
+  </center>
+  </div>
+  <div class="notifier">
+	notifications
+  </div>
+</body>
+</html>

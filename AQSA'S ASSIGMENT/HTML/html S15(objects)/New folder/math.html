@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form>
+<input type="number" name="num" id="a"/>
+<input type="button"  value="round" onClick="func()"/>
+
+<input type="button"  value="floor" onClick="func1()"/>
+
+<input type="button"  value="ceil" onClick="func2()"/>
+
+
+</form>
+<script>
+
+function func(){
+	
+	
+	
+ x=document.getElementById('a').value;
+ var b=Math.round(x);
+	alert(b);
+}
+
+
+function func1(){
+	
+	
+	
+ x=document.getElementById('a').value;
+ var b=Math.floor(x);
+	alert(b);
+}
+function func2(){
+	
+	
+	
+ x=document.getElementById('a').value;
+ var b=Math.ceil(x);
+	alert(b);
+}
+
+
+</script>
+</body>
+</html>

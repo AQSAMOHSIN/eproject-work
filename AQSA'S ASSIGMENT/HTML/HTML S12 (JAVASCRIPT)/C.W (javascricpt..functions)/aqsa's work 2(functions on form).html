@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<script>
+
+
+
+
+//onclick
+function aqsa1(f)
+{ 
+    f.style.background="blue";
+}
+
+
+
+
+
+
+//onKeyUp
+function aqsa2(x)
+{
+x.value=x.value.toUpperCase();
+}
+
+
+
+
+
+
+// onKeyPress
+function aqsa3()
+{
+	alert("You pressed a key inside the input field");
+}
+
+
+//onLoad
+function aqsa4()
+{
+	alert("wellcom here dear");
+}
+
+
+//on onBlur
+function aqsa5(z)
+{
+	z. style="font-style:italic";
+}
+
+
+
+//onclick	
+function aqsa6()
+{
+	alert("ARE YOU SURE;");
+}
+
+
+</script>
+
+
+
+
+
+</head>
+
+<body onLoad="aqsa4(this)" bgcolor="#0099FF">
+<form style="width:600px; height:900px; margin-top:100px; margin-left:400px;">
+<fieldset style="background-color:#0CC">
+<legend  style="font-size:46px; color:#00F; font-weight:bold;">FORM </legend>
+NAME;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="text" name="nam"  onClick="aqsa1(this)"="f1(this)" /><br><br>
+
+
+FATHER NAME;<input type="text" name="fn" onKeyUp="aqsa2(this)"/><br><br>
+
+
+AGE;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="age" on onBlur="aqsa5(this)"/><br><br>
+
+
+EMAIL;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="mail"  onKeyPress="aqsa3(this)"/><br><br>
+
+
+<input type="submit" value="submit"   onclick="aqsa6(this)"/>
+
+
+
+
+
+
+
+</fieldset>
+</form>
+</body>
+</html>

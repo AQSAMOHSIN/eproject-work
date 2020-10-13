@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<link href="jquery-ui-1.11.2/jquery-ui.css">
+<link href="jquery-ui-themes-1.11.2/themes/smoothness/jquery-ui.css">
+
+
+
+<script type="text/javascript">
+$(document).ready(function() { 
+	$('#1').delay(1000).show("shake");
+	$('#1').delay(2000).hide("shake");
+	var size = $('img').size(); 
+	var count = 2;
+	setInterval(function(){
+	$('#'+count).show("drop");
+	$('#'+count).delay(2000).hide("shake");
+	if(count == size){
+	count  = 1;	
+	}else
+	{
+	count = count + 1;
+	}},3000);
+});
+</script>
+<style type="text/css">
+img{
+position:absolute;
+display:none;
+
+}
+</style>
+</head>
+<body>
+
+<img id="1" src="1.jpg" width="800px" height="250px" />
+<img id="2" src="2.jpg" width="800px" height="250px"/>
+<img id="3" src="3.jpg" width="800px" height="250px" />
+<img id="4" src="4.jpg" width="800px" height="250px"/>
+
+
+</body>
+</html>

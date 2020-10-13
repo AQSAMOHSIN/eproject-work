@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<style>
+#mcanvas{
+border:11px  dotted  #CC3399;
+background-color:#C9F;
+margin-left:400px;}
+</style>
+<body>
+<script>
+window.onload=function(){
+var canvas=document.getElementById('mcanvas');
+var ctext=canvas.getContext('2d');
+
+var x=canvas.width/2;
+var y=canvas.height/2;
+ctext.beginPath();
+ctext.arc(x,y,85,0,2*Math.PI,false);
+ctext.lineWidth=8;
+ctext.strokeStyle="green";
+ctext.stroke();
+ctext.fillStyle="yellow";
+ctext.fill();
+
+var x=250;
+var y=270;
+var radius=50;
+var start=1*Math.PI;
+var end=1.9*Math.PI;
+var dir=true;
+ctext.beginPath();
+ctext.arc(x,y,radius,start,end,dir);
+ctext.lineWidth=8;
+ctext.strokeStyle="red";
+ctext.stroke();
+
+
+
+
+
+
+
+ctext.beginPath();
+ctext.arc(220,230,9,0,2*Math.PI,false);
+ctext.lineWidth=8;
+ctext.strokeStyle="red";
+ctext.stroke();
+ctext.fillStyle="lightpink";
+ctext.fill();
+
+
+ctext.beginPath();
+ctext.arc(280,230,9,0,2*Math.PI,false);
+ctext.lineWidth=8;
+ctext.strokeStyle="red";
+ctext.stroke();
+ctext.fillStyle="lightpink";
+ctext.fill();
+
+
+
+};
+
+</script>
+
+<canvas id="mcanvas" width="500" height="500"></canvas>
+
+</body>
+</html>

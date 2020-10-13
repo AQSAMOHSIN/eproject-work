@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+html { height: 100% }
+body { height: 100%; width: 100%; margin: 10% }
+#map_canvas { height: 70%; width: 70% }
+</style>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script>
+window.onload = function initialize()
+{
+// Loading Google Maps
+var num = new google.maps.LatLng(51.528663,-0.173171);
+var myOptions = {
+zoom: 16,
+center: num, mapTypeId: google.maps.MapTypeId.TERRAIN
+};
+var mymap = new google.maps.Map(document.getElementById('map_canvas')
+, myOptions);
+var marker = new google.maps.Marker({
+position: num, map: mymap,
+title:'Lord’s Cricket Ground, London!'
+});
+}
+</script>
+</head>
+
+<body>
+<div id="map_canvas"></div>
+</body>
+</html>

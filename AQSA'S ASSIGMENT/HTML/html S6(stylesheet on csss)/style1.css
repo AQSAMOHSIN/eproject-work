@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1{
+	text-align:center;
+	font-size:24px;
+	background-color:#CCC;
+	color:#F09;
+	border-style:double dotted groove dashed;
+	border-color:#F00 blue #CC6699 transparent;
+	padding:50px;
+	text-decoration:underline;
+}
+p.xyz{
+	margin-left:40px;
+	background-color:#CCC;
+	border:dashed thick #393;
+	word-spacing:20px;
+	color:#C63;
+	font-variant:small-caps;
+	line-height:60px;
+	}
+	
+span.abc{
+	color:#900;
+	font-style:italic;
+	text-decoration:line-through;}	
+	
+	img{
+		width:40em;
+		height:20em;
+		margin-left:60px;
+		border-style:dotted;
+		border-color:#C66;
+		border-width:thick;
+		border-radius:100px;}

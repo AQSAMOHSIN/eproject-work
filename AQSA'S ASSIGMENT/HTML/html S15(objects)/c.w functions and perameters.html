@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script>
+function add(){
+var num1=parseInt(prompt("enter first number"));
+var num2=parseInt(prompt("enter second number"));
+var res=num1+num2;
+alert("Addition: "+res);
+}
+
+function sub(a,b){
+var res1=a-b;
+alert("Subtraction:"+res1);
+
+
+
+}
+function mult(num3,num4){
+	
+var num3=document.getElementById('x').value;
+var num4=document.getElementById('y').value;	
+	
+var res3=num3*num4;
+alert("MULTIPLICTAION: "+res3);
+
+
+}
+</script>
+
+</head>
+
+<body>
+<input type="button" value="add" onClick="add()"/>
+
+<input type="button" value="sub" onClick="sub(12,19)"/><BR>
+
+FIRST:<input type="number" name="first" id="x"/><BR>
+SECOND:<input type="number" name="second" id="y"/><BR>
+<input type="button" value="mult" onClick="mult(x,y)"/>
+
+</body>
+</html>

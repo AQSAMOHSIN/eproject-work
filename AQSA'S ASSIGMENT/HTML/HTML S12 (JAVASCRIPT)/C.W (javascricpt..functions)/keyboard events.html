@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script>
+function numericonly()
+{
+if(!event.keyCode >= 48 && event.keyCode <=58)
+event.returnValue=false;
+}
+function countWords()
+{
+var message = document.getElementByID("txtMessage").value;
+message= message.replace(/\s+/g, " ");
+var numberOfWords = message.split(" ").length;
+document.getElementById("txtTrack").value = words Remaining: + eval(50 - numberOfWords);
+if(numberOfWords > 50)
+alert("too many words.");
+}
+</script>
+</head>
+
+<body>
+name:<input type="text" name="firstname" id="txtMessage"/>
+<input type="text" name="numwords" id="txtTrack"/>
+<button onclick="countWords()">Click me</button>
+
+</body>
+</html>

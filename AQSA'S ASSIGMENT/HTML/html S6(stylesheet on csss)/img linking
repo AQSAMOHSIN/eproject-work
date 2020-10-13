@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>external</title>
+
+<link rel="stylesheet" type="text/css" href="style1.css"/>
+
+
+
+</head>
+
+<body>
+<h1>EXTERNAL STYLESHEET</h1>
+<P>HELLO WORLD</P>
+<a href="LINKING.html"><img src="iuiu.jpg" ALT="TXT" /></a>
+</body>
+</html>

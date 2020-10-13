@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<script>
+var a=prompt('enter name');
+var b=prompt('enter id');
+
+var sum = 0;
+var value1= new Array(4);
+for (var i=0;i<value1.length;i++)
+{
+	value1[i]=parseInt(prompt("enter marks"));
+	document.write('marks are:    ' +value1[i]);
+	document.write('<br>');
+	sum = sum+value1[i];
+
+
+
+}
+var d=sum;
+alert("Total marks;    " +d);
+
+
+var c=sum/200*100;
+alert("percentage;    " +c);
+
+var num=c;
+if(num>=70&&num<80){alert("A....GOOD:)");}
+	
+else if(num>=80&&num<90){alert("A+...EXELENT:)");}
+
+
+else if(num>=90){alert("A++...MARVALOUS:)");}
+	
+	
+else if(num>=60&&num<70){alert("B...FAIR:(");}
+
+else if(num>=50&&num<60){alert("C AVERAGE :(");}
+
+
+else alert(" FAIL..:(");
+
+
+
+
+</script>
+
+</body>
+</html>

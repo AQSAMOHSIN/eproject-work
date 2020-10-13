@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+var sum=0;
+var value1=new Array(4);
+for (var i=0;i<value1.length;i++)
+{
+	value1[i]=parseInt(prompt("enter number"));
+	document.write('NUMBER is :' +value1[i]);
+	document.write('<br>');
+	sum=sum+value1[i];
+}
+alert('Average is '+(sum/value1.length));
+
+
+</script>
+</body>
+</html>

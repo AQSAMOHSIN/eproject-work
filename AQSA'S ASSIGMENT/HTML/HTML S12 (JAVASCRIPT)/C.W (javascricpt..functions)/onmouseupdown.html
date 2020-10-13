@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script>
+function myFunction(elmnt,clr)
+{
+elmnt.style.color=clr;
+document.getElementById(font).style.background="green";
+}
+</script>
+</head>
+<body>
+
+<p id="font" onmousedown="myFunction(this,'blue')" onmouseup="myFunction(this,'green')">
+Click the text to change the color. A function, with parameters, is triggered when the mouse button is pressed down, and again, with other parameters, when the mouse button is released.
+</p>
+<p onmousedown="myFunction(this, 'red')" onmouseup="myFunction(this, 'blue')">
+Click the text to change the color. A function, with parameters, is triggered when the mouse button is pressed down, and again, with other parameters, when the mouse button is released.
+</p>
+</body>
+</html>

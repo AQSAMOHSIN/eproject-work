@@ -1,0 +1,100 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script>
+function f(){
+	 var a = parseFloat(document.getElementById('eng').value);
+	var b = parseFloat(document.getElementById('phy').value);
+	var c = parseFloat(document.getElementById('maths').value);
+
+	
+	var result =  a + b + c ;
+	document.getElementById('ans').value = result;
+}
+
+function fa(){
+	   var a = parseFloat(document.getElementById('eng').value);
+	var b = parseFloat(document.getElementById('phy').value);
+	var c = parseFloat(document.getElementById('maths').value);
+	
+ 
+	
+	var resul =  a + b + c ;
+	var resu = (resul)/300*100 ;
+document.getElementById('per').value = resu;
+	
+	
+	
+	}
+	
+	
+	function fab(){
+	var GRADE = document.getElementById('per').value;
+	
+ switch(GRADE){
+	 
+	case "":
+	alert("Fill the above Information First");
+	break;
+	 
+	case "90":
+	alert("A1-exelent result");
+	break;
+	
+	case "80":
+	alert("A1");
+	break;
+		
+	
+	case "70":
+alert("A");
+	break;
+		
+	
+	case "60":
+	alert("b");
+	break;
+	
+	case "50":
+alert("c");
+	break;
+	
+	default:
+	alert("Mehnat kr le bhai/ behn");
+	
+	
+	 
+	 
+	 
+	 
+	 }
+	
+	}
+	
+	
+	
+</script>
+</head>
+
+<body style="background-color:#eeeeee">
+<div style="	height:800px;
+		width:400px; margin-left:500px; margin-top:180px;  alignment-adjust:central;">
+<form >
+<fieldset style="background:#09F; border:double 4PX #0000CC; ">
+<legend style="font-size:46px;color:#00F">Progress Report</legend>
+<br>MATHS:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" id="eng" placeholder="marks out off 100" />
+<br><br>PHYSICS:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="phy" placeholder="marks out off 100"/>
+<br><br>ENGLISH:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" id="maths" placeholder="marks out off 100"/>
+<br><br><input type="button" value="total" onClick="f()"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" id="ans" placeholder="Total Marks"/><br>
+<br><br><input type="button" onClick="fa()" value="Percentage"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" id="per"  placeholder="Percentage"/>
+<br><br><button onClick="fab()">GRADE</button>
+</fieldset>
+</form>
+</div>
+</body>
+</html>

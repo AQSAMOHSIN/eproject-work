@@ -1,0 +1,20 @@
+<!DOCTYPE html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script>
+window.onload = function() {
+var canvas = document.getElementById('cv');
+var ctext = canvas.getContext('2d');
+ctext.font = 'italic 30pt Calibri';
+ctext.fillStyle = 'Red';
+ctext.fill();
+ctext.fillText('Welcome to HTML5!', 50, 100);
+};
+</script>
+</head>
+
+<body>
+<canvas id="cv" width="450" height="200" style="border:solid thin; background:#CCC"></canvas>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function()
+{
+$('p').click(function()
+{
+$('p').toggle(function()
+{
+$('body').css('background-color','grey');
+},function(){
+	$('body').css('background-color','red');
+},function(){
+	$('body').css('background-color',"#C0C");
+
+}
+);
+});
+});
+</script>
+</head>
+
+<body>
+<p>Click to change the colors.</p>
+</body>
+</html>

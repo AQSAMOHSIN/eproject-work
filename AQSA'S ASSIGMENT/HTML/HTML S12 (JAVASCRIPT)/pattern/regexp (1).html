@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+
+
+
+<style>
+body{
+	margin-left:500px;}
+</style>
+<script>
+function func(){
+var emailRegex =/^[A-Za-z0-9._]*\@[A-Za-z]*\.[A-Za-z]{2,5}$/;
+var femail = document.getElementById("myEmail").value;
+
+ if(femail=="")
+ {
+	 alert('Email is empty');
+  document.form.Email.focus();
+  document.getElementById("errorBox").innerHTML ="enter the email";
+ 
+  }
+ else if(!emailRegex.test(femail)){
+  document.form.Email.focus();
+  document.getElementById("errorBox").innerHTML = "enter the valid email";
+
+  }
+ 
+
+   
+}
+
+/*
+function func1() {
+	if(email.match(pattern)){
+    var x = document.getElementById("myEmail").pattern;
+    document.getElementById("demo").innerHTML ="PATTERN NOT MATCHED:" +x ;
+	alert("Sorry! You have entered an invalid email address! Please try again.");
+}
+
+}*/
+</script>
+</head>
+
+<body>
+<form action="#" name="form">
+<fieldset style="width:400px;height:200px;background-color:#CC9;">
+<legend style="text-align:center;font-style:italic;color:#03F;">LOGIN</legend>
+<table>
+  <TR>
+
+
+<TD>Username:</TD><TD><input type="text" id="txtname" pattern="/^[a-z0-9_-]{3,6}$/"/><br></TD></TR>
+<TR>
+<TD>E-mail: </TD><TD><input type="email" id="myEmail" name="Email" /><br></TD><td style="color:red;"><p id="errorBox"></p></td></TR>
+<TR><TD><input type="button" value="SUBMIT"  onClick="func()"/></TD></TR>
+</table>
+</fieldset>
+</form>
+
+
+
+
+
+
+
+</body>
+</html>

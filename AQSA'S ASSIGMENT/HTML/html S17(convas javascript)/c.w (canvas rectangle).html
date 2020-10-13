@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+#mcanvas{
+border:1px solid red;}
+</style>
+<script>
+window.onload=function(){
+var canvas=document.getElementById('mcanvas');
+var ctext=canvas.getContext('2d');
+//drawing rectangle
+ctext.beginPath();
+ctext.rect(20,30,200,100);
+ctext.fillStyle="purple";
+ctext.fill();
+ctext.lineWidth=5;
+ctext.strokeStyle="yellow";
+ctext.stroke();
+//drawing line
+ctext.beginPath();
+ctext.moveTo(400,200);
+ctext.lineTo(250,60);
+ctext.lineWidth=6;
+ctext.strokeStyle="green";
+ctext.stroke();
+};
+</script>
+</head>
+<body>
+<canvas id="mcanvas" width="500" height="500"></canvas>
+</body>
+</html>

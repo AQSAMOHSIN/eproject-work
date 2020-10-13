@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<script>
+var products = new Array(2);
+products[0] = new Array('Monitor', '236.75');
+products[1] = new Array('Keyboard', '45.50');
+document.write('<TABLE border=1><TR><TH>Name</TH><TH>Price</TH></TR>');
+for(var i=0; i<products.length; i++)
+{
+	document.write('<TR>');
+	for(var j=0; j<products[i].length; j++)
+{
+		document.write('<TD>' + products[i][j] + '</TD>');
+}
+	document.write('</TR>');
+}
+document.write('</TABLE>');
+</script>
+
+</head>
+
+<body>
+</body>
+</html>

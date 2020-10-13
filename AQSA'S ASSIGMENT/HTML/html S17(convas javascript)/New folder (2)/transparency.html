@@ -1,0 +1,24 @@
+<!DOCTYPE html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script>
+window.onload = function() {
+var canvas = document.getElementById('cv');
+var ctext = canvas.getContext('2d');
+
+ctext.strokeStyle = 'black';
+ctext.font = 'italic 30pt Calibri';
+
+ctext.strokeText('HTML5', 40, 100);
+ctext.fillStyle = 'blue';
+ctext.globalAlpha = 0.3;
+ctext.fillRect(100, 10, 150, 100);
+};
+</script>
+</head>
+
+<body>
+<canvas id="cv" width="360" height="200" style="border:solid #000 thin"></canvas>
+</body>
+</html>

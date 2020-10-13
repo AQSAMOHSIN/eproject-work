@@ -1,0 +1,69 @@
+html,body{ height:100%; overflow:hidden; }
+h2{ 
+text-align:center; 
+margin-top:0px; 
+margin-bottom:3px; 
+border-bottom:1px solid black;
+}
+
+.leftContainer{
+border-right:1px solid black;
+float:left; 
+width:350px;
+margin-right:5px;
+height:75%;
+}
+.rightContainer{
+width:auto;
+height:75%;
+overflow: auto;
+}
+.notifier{
+border-top:1px solid black;
+text-align:center;
+min-height:20px;
+max-height:50px;
+}
+
+.leftContainer>div{
+	/*text-align:center;*/
+  margin-left:15px;
+}
+.leftContainer button{
+  margin-top:8px;
+  border-radius:10px;
+  background: #7d7e7d;
+  background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%);
+  /*height:25px;*/
+  line-height:25px;
+  color:white;
+}
+.keyFloat{
+  float:right;
+  width:130px;
+}
+
+/* Table UI */
+.rightContainer table{
+	margin: 20px auto auto;
+    width: 400px;
+	min-width: 300px;
+	border-collapse:collapse;
+	border:1px solid black;
+	box-shadow:7px 5px 3px #999999;
+	font-family:Verdana,sans-Serif;
+	font-size:9pt;  
+}
+.rightContainer thead>tr{
+  background: #7d7e7d;
+  background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); 
+  color:white;
+  line-height:20px;
+}
+.rightContainer tbody>tr{
+ border-bottom:1px solid black;
+  line-height:20px;
+}
+.rightContainer table input{	
+    width: 50px;
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script>
+function checksupport(){
+	if(('sessionStorage'in window)&& window['sessionStorage']!==null)
+
+{ sessionStorage.setItem('name','Sarah');
+alert('the name is:   '+sessionStorage.getItem('name'));
+	
+}}
+
+</script>
+</head>
+
+<body onload="checksupport();">
+
+
+
+</body>
+</html>
